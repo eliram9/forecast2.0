@@ -56,7 +56,7 @@ const InputSearch = ({ setQuery, units, setUnits }) => {
                         <input {...getInputProps({ placeholder: 'Search by city' })}
                             type='text' 
                             className='text-md font-light px-2 py-1 rounded-lg shadow-xl focus:outline-none capitalize placeholder:lowercase font-regular w-[400px] relative
-                                    xs:text-xs xs:w-[250px]
+                                    xs:w-[200px]
                                     sm:text-sm 
                                     md:text-sm  md:w-[250px]  
                                                 lg:w-[300px]
@@ -79,8 +79,8 @@ const InputSearch = ({ setQuery, units, setUnits }) => {
                 </PlacesAutocomplete>
 
                 {/* Icons */}
-                <UilSearch fill="white" onClick={handleClick} className='cursor-pointer xs:w-[15px] sm:w-[18px]' />
-                <UilLocationArrow fill="white" onClick={handleLocationClick} className='cursor-pointer xs:w-[15px] sm:w-[18px]' />
+                <UilSearch fill="white" onClick={handleClick} className='cursor-pointer xs:w-[17px] sm:w-[20px]' />
+                <UilLocationArrow fill="white" onClick={handleLocationClick} className='cursor-pointer xs:w-[17px] sm:w-[20px]' />
             </div>
             <div className='flex flex-row items-center justify-end text-white text-xl font-regular py-1
                             sm:justify-center 

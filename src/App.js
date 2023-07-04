@@ -8,7 +8,7 @@ import getFormattedWeatherData from './services/weatherService';
 import world from './media/world.mp4'
 
 function App() {
-    const [query, setQuery] = useState({ q: "washington" });
+    const [query, setQuery] = useState({ q: "potomac" });
     const [units, setUnits] = useState("metric");
     const [weather, setWeather] = useState(null);
 
@@ -38,7 +38,7 @@ function App() {
                 <h1 className='font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-yellow-100 to-red-500 tracking-wider font-days text-5xl -
                                xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
                 '>
-                    FORECAST <span className='tracking-reg'> 2.1</span>
+                    FORECAST <span className='tracking-reg'> 2.0</span>
                 </h1>
                 <InputSearch setQuery={setQuery} units={units} setUnits={setUnits} />
                     {!weather ? "" : (
