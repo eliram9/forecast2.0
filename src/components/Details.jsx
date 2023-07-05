@@ -12,12 +12,12 @@ const Details = ({weather: {details, temp, feels_like, humidity, speed, dt, visi
 
     return (
         <div className='xs:-mx-[5%] 2xl:mx-[4%]'>
-            <div className='flex items-center justify-center pt-3 text-xl text-blue-200'>
+            <div className='flex items-center justify-center pt-0 text-xl lg:text-lg text-blue-200'>
                 <p>{details} - <span className='font-extralight'>{description}</span></p>
             </div>
             <div className='flex flex-row itmes-center justify-around text-white py-6'>
                 <Lottie animationData={icon} className="w-20" />
-                <p className='text-3xl font-light'>{temp.toFixed()}°</p>
+                <p className='text-3xl font-light xs:text-[25px]'>{temp.toFixed()}°</p>
 
                 <div className='flex flex-col space-y-2 items-start justify-end'>
                     <div className='flex font-light text-sm items-center justify-center'>
@@ -52,7 +52,7 @@ const Details = ({weather: {details, temp, feels_like, humidity, speed, dt, visi
                     <span className='font-medium ml-1'>{formatSunsTime(sunset, timezone)}</span>
                 </p> */}
                 <UilArrowToBottom className='xs:w-[15px] sm:w-[18px]' fill="#ADCEE0" />
-                <p className='font-light xs:text-xs  sm:text-sm'>Lowest: 
+                <p className='font-light xs:text-xs  sm:text-sm'>L: 
                     <span className='font-medium ml-1'>{temp_min.toFixed()}°</span>
                 </p>
 
@@ -66,7 +66,7 @@ const Details = ({weather: {details, temp, feels_like, humidity, speed, dt, visi
                 <p className='font-extralight text-2xl mb-1'>|</p>
 
                 <UilTopArrowToTop className='xs:w-[15px] sm:w-[18px]' fill="#F79E84" />
-                <p className='font-light xs:text-xs sm:text-sm'>Highest: 
+                <p className='font-light xs:text-xs sm:text-sm'>H: 
                     <span className='font-medium ml-1'>{temp_max.toFixed()}°</span>
                 </p>                
             </div>

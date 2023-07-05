@@ -25,9 +25,9 @@ function App() {
 
     return (
         <div>
-            <video src={world} loop muted autoPlay playsInline className='w-full h-[132vh] object-cover bg-center' />
+            <video src={world} loop muted autoPlay playsInline className='w-full h-[130vh] object-cover bg-center' />
             {/* Overlay */}
-            <div className='absolute bg-black/70 top-0 left-0 bottom-0 right-0 blur-sm w-full h-[132vh]' />
+            <div className='absolute bg-black/70 top-0 left-0 bottom-0 right-0 blur-sm w-full h-[130vh]' />
             <div>
                 <div className='absolute left-1/2 transform -translate-x-1/2 justify-center items-center top-[2%] w-[80vw] p-10 bg-white/20 text-center rounded-3xl
                                 xs:top-[2%] xs:w-[92vw] 

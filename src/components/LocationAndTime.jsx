@@ -5,7 +5,7 @@ const LocationAndTime = ({weather: {name, country, dt, timezone }}) => {
     return (
         <>
         <div className='items-center justify-center my-4 text-white'>
-            <p className='text-xl font-light xs:text-[0.9rem]
+            <p className='text-xl font-light xs:text-[0.84rem]
             
             '>{
                 formatToLocalTime(dt, timezone)}
