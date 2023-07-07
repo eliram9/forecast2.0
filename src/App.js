@@ -24,10 +24,7 @@ function App() {
 
     return (
         <div>
-            <video loop={true} muted={true} autoplay={true} playsinline={true} className='w-full h-[130vh] object-cover bg-center'>
-                <source src={world} />
-            </video>
-            {/* <video src={world} loop muted autoPlay playsInline className='w-full h-[130vh] object-cover bg-center' /> */}
+            <video src={world} type="video/mp4" controls={false} loop muted autoPlay playsInline className='w-full h-[130vh] object-cover bg-center' />
             {/* Overlay */}
             <div className='absolute bg-black/70 top-0 left-0 bottom-0 right-0 blur-sm w-full h-[130vh]' />
             <div>
