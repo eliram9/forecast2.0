@@ -5,7 +5,9 @@ import Details from './components/Details';
 import HourlyForecast from './components/HourlyForecast';
 import DailyForecast from './components/DailyForecast';
 import getFormattedWeatherData from './services/weatherService';
-import world from './media/world.mp4'
+import world from './media/world2.mp4'
+
+
 
 function App() {
     const [query, setQuery] = useState({ q: "potomac" });

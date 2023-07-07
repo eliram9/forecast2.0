@@ -28,7 +28,7 @@ const HourlyForecast = ({weather: {hourly}}) => {
             <div className='flex flex-row items-center justify-between mt-4'>
                 {hourlyDetails.map((item) => 
                     <div className='flex flex-col items-center justify-center' key={item.title}>
-                        <p className='font-light text-sm xs:text-xs'>{item.title}</p>
+                        <p className='font-light text-sm xs:text-[0.65rem]'>{item.title}</p>
                         <Lottie animationData={item.icon} className='w-7 my-2' />
                         <p className='font-light text-sm'>{item.temp.toFixed()}°</p>
                     </div>

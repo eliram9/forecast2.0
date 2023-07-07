@@ -31,7 +31,7 @@ const DailyForecast = ({weather: {daily}}) => {
                     <div className='flex flex-col items-center justify-center' key={day.title}>
                         <p className='font-light text-sm'>{day.title}</p>
                         <Lottie animationData={day.icon} className='w-7 my-2' />
-                        <p className='font-light text-sm xs:text-xs'>{day.min.toFixed()}° - {day.temp.toFixed()}°</p>
+                        <p className='font-light text-sm xs:text-[0.7rem]'>{day.min.toFixed()}°-{day.temp.toFixed()}°</p>
                     </div>
                 )}
             </div>
