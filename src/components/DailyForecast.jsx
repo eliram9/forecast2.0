@@ -5,7 +5,7 @@ import { getHourlyIcons } from '../services/weatherService';
 
 const DailyForecast = ({weather: {daily}}) => {
     const days = daily; 
-    console.log(days)
+    // console.log(days)
 
     const timeAndDetails = daily.map((item) => {
         return [item.details, item.time]
